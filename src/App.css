@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
-}
+@import "./assets/css/normalize.css";
+@import "./assets/css/fonts.css";
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* =============== CONTENTS =============== */
+/* FONTS */
+/* BOX-SIZING */
+/* GLOBAL STYLES */
+/* HELPER / GLOBAL COMPONENTS */
+/* MEDIA QUERIES */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+/*------------------------------------*\
+  #FONT-FACE
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+  #BOX-SIZING
+\*------------------------------------*/
+
+html {
+    box-sizing: border-box;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
   }
-  to {
-    transform: rotate(360deg);
+
+  /*------------------------------------*\
+    #GLOBAL-STYLES
+  \*------------------------------------*/
+
+  html {
+    height: 100%;
   }
-}
+
+  body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "Mulish", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #222;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /*------------------------------------*\
+    #HELPER / GLOBAL COMPONENTS
+  \*------------------------------------*/
+
+  /* VISUALLY HIDING CODE */
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+
